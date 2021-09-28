@@ -43,8 +43,8 @@ How to change colors:
     `--backgroundColor` - change the background color of the extension.  
   
 #### example:
-    changing:  
-    --currencyTypeColor: rgb(134, 206, 235);  
-    to:  
-    --currencyTypeColor: rgb(233, 40, 40);  
-    will make the three letter representation of the currency turn red.
+changing:  
+--currencyTypeColor: rgb(134, 206, 235);  
+to:  
+--currencyTypeColor: rgb(233, 40, 40);  
+will make the three letter representation of the currency turn red.
