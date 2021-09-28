@@ -33,7 +33,7 @@ function change2() {
 
 function convert(amount, from, to, fieldToEdit) {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml");
+    xhr.open("GET", "https://mycorsproxyalmog.herokuapp.com/https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml");
     xhr.withCredentials = false;
 
     xhr.addEventListener("readystatechange", function () {

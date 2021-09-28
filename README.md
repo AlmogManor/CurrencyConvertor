@@ -22,11 +22,12 @@ Microsoft Edge:
 
 How to change colors:  
 1. open the popup.css file in the CurrencyConvertor/popup/  
-2. inside :root edit the rgb values of the following fields:  
+2. inside ":root{}" edit the rgb values of the following fields:  
     --currencyTypeColor - change the color of the currency type text (ILS, USD...)  
     --currencyTypeBackgroundColor - change the background color of the currency type menu  
 
     --textColor - change the color of the text inside the text field (where you input currency amount)  
     --textBackgroundColor - change the background color of the text field  
+    --textBorderColor - change the color of the border of the text field  
 
     --backgroundColor - change the background color of the extension  

@@ -1,11 +1,12 @@
 :root {
     --currencyTypeColor: rgb(134, 206, 235);
-    --currencyTypeBackgroundColor: rgb(37, 39, 39);
+    --currencyTypeBackgroundColor: rgb(255, 255, 255);
 
-    --textColor: rgb(255,255,255);
-    --textBackgroundColor: rgb(37, 39, 39);
+    --textColor: rgb(0, 0, 0);
+    --textBackgroundColor: rgb(255, 255, 255);
+    --textBorderColor: rgb(124, 124, 124);
 
-    --backgroundColor: rgb(37, 39, 39);
+    --backgroundColor: rgb(255, 255, 255);
 }
 
 .input-field {
@@ -15,6 +16,7 @@
     width: 100px;
     color: var(--textColor);
     background-color: var(--textBackgroundColor);
+    border-color: var(--textBorderColor);
   }
   
 .input-select {
