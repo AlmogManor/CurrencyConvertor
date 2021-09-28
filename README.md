@@ -1,7 +1,7 @@
 How to install:  
 While I am waiting for this extension to be approved by microsoft, you can install it as a developer build the following way:  
   
-1. download the code from this repository.
+1. download the code from this repository (press the green "Code" button and than "download zip").
 2. unzip the folder, you should have a folder named "CurrencyConvertor", with folders named "popup" and "icons" inside.
 3. save this folder somewhere safe, I recommend "C:\Program Files", if you delete this file the extension will be deleted too.
 4. follow the next steps depending on your browser:
