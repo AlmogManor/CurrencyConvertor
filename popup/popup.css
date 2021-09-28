@@ -2,12 +2,13 @@
     padding: 5px;
     padding-right:50px;
     font-size: 1em;
-    width: 120px;
+    width: 100px;
   }
 .input-select {
     height:24px; color:skyblue; font-weight:bold; border:none; outline:none;
     margin-left:-65px;
     padding: 2px;
+    padding-right: 7px;
 }
 
 input[type=number]::-webkit-outer-spin-button,
