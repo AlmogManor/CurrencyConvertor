@@ -6,7 +6,9 @@
 
 ## Info
 This is a chromium extension that allows you to convert between currencies (CAD, EUR, GBP, ILS, USD) without opening a new tab.  
-The extension uses current exchange rates from Europa Central Bank (https://www.ecb.europa.eu/home/html/index.en.html).
+The extension uses current exchange rates from Europa Central Bank (https://www.ecb.europa.eu/home/html/index.en.html).  
+### Video Showcase:
+https://youtu.be/bxIaKSLRLbQ
 
 ## Installation
 While I am waiting for this extension to be approved by Microsoft, you can install it as a developer build the following way:  
