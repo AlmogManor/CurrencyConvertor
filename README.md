@@ -13,6 +13,10 @@ https://youtu.be/bxIaKSLRLbQ
 ## Installation
 While I am waiting for this extension to be approved by Microsoft, you can install it as a developer build the following way:  
   
+### Guide Video:
+https://youtu.be/YbVuxFBPeQ0  
+
+### Instructions:
 1. download the code from this repository (press the green "Code" button and then "Download ZIP").
 2. unzip the folder, you should have a folder named `CurrencyConvertor-master`, with folders named `popup` and `icons` inside.
 3. save this folder somewhere safe, I recommend `C:\Program Files`. If you delete this file the extension will be deleted too.
@@ -32,7 +36,12 @@ While I am waiting for this extension to be approved by Microsoft, you can insta
 4. select the `CurrencyConvertor-master` folder you saved in step 2.  
   
 ## Change Colors
-How to change colors:  
+You can customize this extension for yourself by changing the colors.
+
+### Guide Video:
+https://youtu.be/OJjeCTkMq0o
+
+### Instructions:
 1. open the popup.css file in the `CurrencyConvertor-master\popup\`  
 2. inside ":root{}" edit the rgb values of the following fields:  
     `--currencyTypeColor` - change the color of the currency type text (ILS, USD...).  
