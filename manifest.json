@@ -1,0 +1,15 @@
+{
+    "name": "Almog's Currency Convertor",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "A Chromium extension to convert between currencies.",
+    "icons": {
+        "16": "icons/coin16x16.png",
+        "32": "icons/coin32x32.png",
+        "48": "icons/coin48x48.png",
+        "128": "icons/coin128x128.png"
+    },
+    "browser_action": {
+        "default_popup": "popup/popup.html"
+    }
+}
