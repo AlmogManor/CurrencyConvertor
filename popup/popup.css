@@ -1,11 +1,29 @@
+:root {
+    --currencyTypeColor: rgb(134, 206, 235);
+    --currencyTypeBackgroundColor: rgb(37, 39, 39);
+
+    --textColor: rgb(255,255,255);
+    --textBackgroundColor: rgb(37, 39, 39);
+
+    --backgroundColor: rgb(37, 39, 39);
+}
+
 .input-field {
     padding: 5px;
     padding-right:50px;
     font-size: 1em;
     width: 100px;
+    color: var(--textColor);
+    background-color: var(--textBackgroundColor);
   }
+  
 .input-select {
-    height:24px; color:skyblue; font-weight:bold; border:none; outline:none;
+    height:24px; 
+    color:var(--currencyTypeColor);
+    background-color: var(--currencyTypeBackgroundColor);
+    font-weight:bold;
+    border:none; 
+    outline:none;
     margin-left:-65px;
     padding: 2px;
     padding-right: 7px;
@@ -19,4 +37,8 @@ input[type=number]::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance:textfield;
+}
+
+body {
+    background-color: var(--backgroundColor);
 }

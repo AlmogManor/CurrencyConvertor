@@ -17,4 +17,16 @@ Microsoft Edge:
 1. open the Extensions page (edge://extensions/).
 2. on the bottom left, enable Developer Mode.
 3. click Load unpacked.
-4. select the CurrencyConvertor folder you saved in step 2.
+4. select the CurrencyConvertor folder you saved in step 2.  
+  
+
+How to change colors:  
+1. open the popup.css file in the CurrencyConvertor/popup/  
+2. inside :root edit the rgb values of the following fields:  
+    --currencyTypeColor - change the color of the currency type text (ILS, USD...)  
+    --currencyTypeBackgroundColor - change the background color of the currency type menu  
+
+    --textColor - change the color of the text inside the text field (where you input currency amount)  
+    --textBackgroundColor - change the background color of the text field  
+
+    --backgroundColor - change the background color of the extension  
