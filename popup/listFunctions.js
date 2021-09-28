@@ -7,7 +7,7 @@ function change1() {
     var currency2 = dropdown2.options[dropdown2.selectedIndex].value;
     var input2 = document.getElementById("currency2");
 
-    input1.value = convert(input2, currency2, currency1);
+    convert(parseInt(input2.value), currency2, currency1, input1);
 }
 
 function change2() {
@@ -19,17 +19,39 @@ function change2() {
     var currency2 = dropdown2.options[dropdown2.selectedIndex].value;
     var input2 = document.getElementById("currency2");
 
-    input2.value = convert(input1, currency1, currency2);
+    convert(parseInt(input1.value), currency1, currency2, input2);
 }
 
-function convert(amount, from, to) {
+function convert(amount, from, to, fieldToEdit) {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml");
-    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml");
+    xhr.withCredentials = false;
 
     xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
-            console.log(this.responseText);
+            var data = this.responseText;
+
+            var toEURrate = 0.0;
+            if (from == "EUR") {
+                toEURrate = 1.0;
+            } else {
+                var regex = from + "' rate='.+'"
+                var match = data.match(regex)[0]
+
+                toEURrate = parseFloat(match.substring(regex.length - 3, match.length - 1)).toFixed(3);
+            }
+
+            var fromEURrate = 0.0;
+            if (to == "EUR") {
+                fromEURrate = 1.0;
+            } else {
+                var regex = to + "' rate='.+'"
+                var match = data.match(regex)[0]
+
+                fromEURrate = parseFloat(match.substring(regex.length - 3, match.length - 1)).toFixed(3);
+            }
+
+            fieldToEdit.value = Number((amount / toEURrate * fromEURrate).toFixed(3));
         }
     });
 
