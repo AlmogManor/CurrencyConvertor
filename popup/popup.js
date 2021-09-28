@@ -1,3 +1,10 @@
+document.getElementById("currency1").addEventListener("input", change2);
+document.getElementById("type1").addEventListener("change", change2);
+
+document.getElementById("currency2").addEventListener("input", change1);
+document.getElementById("type2").addEventListener("change", change1);
+
+
 function change1() {
     var dropdown1 = document.getElementById("type1");
     var currency1 = dropdown1.options[dropdown1.selectedIndex].value;
