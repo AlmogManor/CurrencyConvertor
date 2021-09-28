@@ -1,9 +1,9 @@
 How to install:  
 While I am waiting for this extension to be approved by microsoft, you can install it as a developer build the following way:  
   
-1. download the code from this repository (press the green "Code" button and than "download zip").
+1. download the code from this repository (press the green "Code" button and then "Download ZIP").
 2. unzip the folder, you should have a folder named "CurrencyConvertor-master", with folders named "popup" and "icons" inside.
-3. save this folder somewhere safe, I recommend "C:\Program Files", if you delete this file the extension will be deleted too.
+3. save this folder somewhere safe, I recommend "C:\Program Files". If you delete this file the extension will be deleted too.
 4. follow the next steps depending on your browser:
   
 Google Chrome:  
@@ -22,7 +22,7 @@ Microsoft Edge:
 ---------------------------------------------------------------------------
   
 How to change colors:  
-1. open the popup.css file in the CurrencyConvertor/popup/  
+1. open the popup.css file in the CurrencyConvertor-master/popup/  
 2. inside ":root{}" edit the rgb values of the following fields:  
     --currencyTypeColor - change the color of the currency type text (ILS, USD...)  
     --currencyTypeBackgroundColor - change the background color of the currency type menu  
