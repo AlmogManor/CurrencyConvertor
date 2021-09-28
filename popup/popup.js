@@ -1,10 +1,10 @@
 window.addEventListener("load", loadRates);
 
 document.getElementById("currency1").addEventListener("input", change2);
-document.getElementById("type1").addEventListener("change", change2);
+document.getElementById("type1").addEventListener("change", change1);
 
 document.getElementById("currency2").addEventListener("input", change1);
-document.getElementById("type2").addEventListener("change", change1);
+document.getElementById("type2").addEventListener("change", change2);
 
 
 function change1() {
