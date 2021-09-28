@@ -1,3 +1,5 @@
+window.addEventListener("load", loadRates);
+
 document.getElementById("currency1").addEventListener("input", change2);
 document.getElementById("type1").addEventListener("change", change2);
 
@@ -62,5 +64,12 @@ function convert(amount, from, to, fieldToEdit) {
         }
     });
 
+    xhr.send();
+}
+
+function loadRates() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml");
+    xhr.withCredentials = false;
     xhr.send();
 }
