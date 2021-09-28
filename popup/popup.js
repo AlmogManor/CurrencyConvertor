@@ -16,7 +16,7 @@ function change1() {
     var currency2 = dropdown2.options[dropdown2.selectedIndex].value;
     var input2 = document.getElementById("currency2");
 
-    convert(parseInt(input2.value), currency2, currency1, input1);
+    convert(parseFloat(input2.value), currency2, currency1, input1);
 }
 
 function change2() {
@@ -28,7 +28,7 @@ function change2() {
     var currency2 = dropdown2.options[dropdown2.selectedIndex].value;
     var input2 = document.getElementById("currency2");
 
-    convert(parseInt(input1.value), currency1, currency2, input2);
+    convert(parseFloat(input1.value), currency1, currency2, input2);
 }
 
 function convert(amount, from, to, fieldToEdit) {
