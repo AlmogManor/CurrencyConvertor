@@ -3,7 +3,6 @@
 
 * [Info](#info)
 * [Installation](#installation)
-* [Change Colors](#change-colors)
 
 ## Info
 
