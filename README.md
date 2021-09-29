@@ -41,32 +41,3 @@ While I am waiting for this extension to be approved by Microsoft, you can insta
 2. on the bottom left, enable Developer Mode.  
 3. click Load unpacked.  
 4. select the `CurrencyConvertor-master` folder you saved in step 2.  
-  
-## Change Colors
-
-You can customize this extension for yourself by changing the colors.
-
-### Guide Video
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/OJjeCTkMq0o/0.jpg)](https://www.youtube.com/watch?v=OJjeCTkMq0o)
-
-### Instructions
-
-1. open the popup.css file in the `CurrencyConvertor-master\popup\`  
-2. inside ":root{}" edit the rgb values of the following fields:  
-    `--currencyTypeColor` - change the color of the currency type text (ILS, USD...).  
-    `--currencyTypeBackgroundColor` - change the background color of the currency type menu.  
-
-    `--textColor` - change the color of the text inside the text field (where you input currency amount).  
-    `--textBackgroundColor` - change the background color of the text field.  
-    `--textBorderColor` - change the color of the border of the text field.  
-
-    `--backgroundColor` - change the background color of the extension.  
-  
-#### example
-
-changing:  
-`--currencyTypeColor: rgb(134, 206, 235);`  
-to:  
-`--currencyTypeColor: rgb(233, 40, 40);`  
-will make the three letter representation of the currency turn red.

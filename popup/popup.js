@@ -1,4 +1,4 @@
-window.addEventListener("load", loadRates);
+window.addEventListener("load", loadPage);
 
 document.getElementById("currency1").addEventListener("input", change2);
 document.getElementById("type1").addEventListener("change", change1);
@@ -67,7 +67,21 @@ function convert(amount, from, to, fieldToEdit) {
     xhr.send();
 }
 
-function loadRates() {
+var root = document.querySelector(':root');
+
+function loadPage() {
+    var data = window.localStorage.getItem('colorsData');
+    if (data != null) {
+        const values = data.split("#");
+
+        root.style.setProperty("--currencyTypeColor", "#" + values[1]);
+        root.style.setProperty("--currencyTypeBackgroundColor", "#" + values[2]);
+        root.style.setProperty("--textColor", "#" + values[3]);
+        root.style.setProperty("--textBackgroundColor", "#" + values[4]);
+        root.style.setProperty("--textBorderColor", "#" + values[5]);
+        root.style.setProperty("--backgroundColor", "#" + values[6]);
+    }
+
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml");
     xhr.withCredentials = false;

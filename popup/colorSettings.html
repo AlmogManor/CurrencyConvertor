@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="invisible-space"></div>
+
+    <div class="text-buttons">
+        <a href="popup.html">
+            return
+        </a>
+    </div>
+    <div class="spacer"></div>
+    <div class="text-buttons">
+        <a id="reset-button" href="">
+            reset
+        </a>
+    </div>
+    </br>
+
+
+    <div class="settings-text">Currency Type:</div>
+    <input type="color" id="cp-currency-type" class="field-radio">
+    <span class="container" id="cp-currency-type-v"></span>
+    <br>
+
+    <div class="settings-text">Currency Type Background:</div>
+    <input type="color" id="cp-currency-type-background" class="field-radio">
+    <span class="container" id="cp-currency-type-background-v"></span>
+    <br>
+
+    <div class="settings-text">Text:</div>
+    <input type="color" id="cp-text" class="field-radio">
+    <span class="container" id="cp-text-v"></span>
+    <br>
+
+    <div class="settings-text">Text Background:</div>
+    <input type="color" id="cp-text-background" class="field-radio">
+    <span class="container" id="cp-text-background-v"></span>
+    <br>
+
+    <div class="settings-text">Text Border:</div>
+    <input type="color" id="cp-text-border" class="field-radio">
+    <span class="container" id="cp-text-border-v"></span>
+    <br>
+
+    <div class="settings-text">Background:</div>
+    <input type="color" id="cp-background" class="field-radio">
+    <span class="container" id="cp-background-v"></span>
+    <br>
+    </br>
+
+
+    <input type="number" class="input-field" value="1324" id="dummy1">
+    <select class="input-select" id="dummy2">
+        <option value="CAD">CAD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="ILS">ILS</option>
+        <option value="USD" selected>USD</option>
+    </select>
+</body>
+<script src="colorSettings.js"></script>
+
+</html>
